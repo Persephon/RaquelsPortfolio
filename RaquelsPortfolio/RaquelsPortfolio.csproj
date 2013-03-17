@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97BBE671-DD8C-4B63-B028-4D860591061E}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RaquelsPortfolio</RootNamespace>
+    <AssemblyName>RaquelsPortfolio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="color.png" />
+    <Content Include="Global.asax" />
+    <Content Include="images\misc\HPIM1872.JPG" />
+    <Content Include="images\misc\HPIM2043.JPG" />
+    <Content Include="images\misc\HPIM2044.JPG" />
+    <Content Include="images\misc\IMG_3567.JPG" />
+    <Content Include="images\misc\Product Design.jpg" />
+    <Content Include="images\picture.jpg" />
+    <Content Include="images\scale models\Adobe2.jpg" />
+    <Content Include="images\scale models\Alley.jpg" />
+    <Content Include="images\website\dino.png" />
+    <Content Include="images\website\header.png" />
+    <Content Include="images\website\mainBg.png" />
+    <Content Include="images\website\navBg.png" />
+    <Content Include="images\website\strange_bullseyes.png" />
+    <Content Include="pages\animation\animation.html" />
+    <Content Include="pages\animation\assets\background.jpg" />
+    <Content Include="pages\animation\assets\css\style.css" />
+    <Content Include="pages\animation\assets\css\style2.css" />
+    <Content Include="pages\animation\assets\css\style3.css" />
+    <Content Include="pages\animation\assets\skins\close.png" />
+    <Content Include="pages\animation\assets\skins\close2.png" />
+    <Content Include="pages\animation\assets\skins\close3.png" />
+    <Content Include="pages\animation\assets\skins\close4.png" />
+    <Content Include="pages\animation\assets\skins\close5.png" />
+    <Content Include="pages\animation\assets\skins\close6.png" />
+    <Content Include="pages\animation\assets\skins\scrollSkin.xml" />
+    <Content Include="pages\animation\assets\skins\scrollSkin2.xml" />
+    <Content Include="pages\animation\assets\skins\scrollSkin3.xml" />
+    <Content Include="pages\animation\assets\skins\scrollSkin4.xml" />
+    <Content Include="pages\animation\assets\skins\skin2\back.png" />
+    <Content Include="pages\animation\assets\skins\skin2\dragBar.png" />
+    <Content Include="pages\animation\assets\skins\skin2\left.png" />
+    <Content Include="pages\animation\assets\skins\skin2\leftOver.png" />
+    <Content Include="pages\animation\assets\skins\skin3\back.png" />
+    <Content Include="pages\animation\assets\skins\skin3\dragBar.png" />
+    <Content Include="pages\animation\assets\skins\skin3\left.png" />
+    <Content Include="pages\animation\assets\skins\skin3\leftOver.png" />
+    <Content Include="pages\animation\assets\skins\skin4\back.png" />
+    <Content Include="pages\animation\assets\skins\skin4\dragBar.png" />
+    <Content Include="pages\animation\assets\skins\skin4\up.png" />
+    <Content Include="pages\animation\assets\skins\skin4\upOver.png" />
+    <Content Include="pages\animation\assets\skins\skin\back.png" />
+    <Content Include="pages\animation\assets\skins\skin\dragBar.png" />
+    <Content Include="pages\animation\assets\skins\skin\up.png" />
+    <Content Include="pages\animation\assets\skins\videoSkin1.xml" />
+    <Content Include="pages\animation\assets\skins\videoSkin1\back.gif" />
+    <Content Include="pages\animation\assets\skins\videoSkin1\bar.gif" />
+    <Content Include="pages\animation\assets\skins\videoSkin1\barScrubber.gif" />
+    <Content Include="pages\animation\assets\skins\videoSkin1\centerPlay.png" />
+    <Content Include="pages\animation\assets\skins\videoSkin1\pause.jpg" />
+    <Content Include="pages\animation\assets\skins\videoSkin1\pauseDown.jpg" />
+    <Content Include="pages\animation\assets\skins\videoSkin1\pauseOver.jpg" />
+    <Content Include="pages\animation\assets\skins\videoSkin1\play.jpg" />
+    <Content Include="pages\animation\assets\skins\videoSkin1\playDown.jpg" />
+    <Content Include="pages\animation\assets\skins\videoSkin1\playOver.jpg" />
+    <Content Include="pages\animation\assets\skins\videoSkin1\pointer.gif" />
+    <Content Include="pages\animation\colorbox\assets\colorbox.css" />
+    <Content Include="pages\animation\colorbox\assets\images\bg.png" />
+    <Content Include="pages\animation\colorbox\assets\images\border.png" />
+    <Content Include="pages\animation\colorbox\assets\images\controls.png" />
+    <Content Include="pages\animation\colorbox\assets\images\loading.gif" />
+    <Content Include="pages\animation\colorbox\assets\images\slideshow_off.gif" />
+    <Content Include="pages\animation\colorbox\assets\images\slideshow_on.gif" />
+    <Content Include="pages\animation\colorbox\assets\images\title.png" />
+    <Content Include="pages\animation\colorbox\jquery-1.7.2.min.js" />
+    <Content Include="pages\animation\colorbox\jquery.colorbox-min.js" />
+    <Content Include="pages\animation\colorbox\swf.js.communication.js" />
+    <Content Include="pages\animation\images.xml" />
+    <Content Include="pages\animation\images\cowteaspoon.jpg" />
+    <Content Include="pages\animation\images\elephantStuffed.jpg" />
+    <Content Include="pages\animation\images\elephantStuffed2.jpg" />
+    <Content Include="pages\animation\images\hand.jpg" />
+    <Content Include="pages\animation\images\homeTheater.jpg" />
+    <Content Include="pages\animation\images\lamb.jpg" />
+    <Content Include="pages\animation\images\room.jpg" />
+    <Content Include="pages\animation\images\u0.jpg" />
+    <Content Include="pages\animation\images\u1.jpg" />
+    <Content Include="pages\animation\images\u2.jpg" />
+    <Content Include="pages\animation\images\u3.jpg" />
+    <Content Include="pages\animation\images\u4.jpg" />
+    <Content Include="pages\animation\images\u5.jpg" />
+    <Content Include="pages\animation\PhotoWallFX.swf" />
+    <Content Include="pages\animation\readme.txt" />
+    <Content Include="pages\animation\settings.xml" />
+    <Content Include="pages\animation\swfobject.js" />
+    <Content Include="pages\drawings\assets\background.jpg" />
+    <Content Include="pages\drawings\assets\css\style.css" />
+    <Content Include="pages\drawings\assets\css\style2.css" />
+    <Content Include="pages\drawings\assets\css\style3.css" />
+    <Content Include="pages\drawings\assets\skins\close.png" />
+    <Content Include="pages\drawings\assets\skins\close2.png" />
+    <Content Include="pages\drawings\assets\skins\close3.png" />
+    <Content Include="pages\drawings\assets\skins\close4.png" />
+    <Content Include="pages\drawings\assets\skins\close5.png" />
+    <Content Include="pages\drawings\assets\skins\close6.png" />
+    <Content Include="pages\drawings\assets\skins\scrollSkin.xml" />
+    <Content Include="pages\drawings\assets\skins\scrollSkin2.xml" />
+    <Content Include="pages\drawings\assets\skins\scrollSkin3.xml" />
+    <Content Include="pages\drawings\assets\skins\scrollSkin4.xml" />
+    <Content Include="pages\drawings\assets\skins\skin2\back.png" />
+    <Content Include="pages\drawings\assets\skins\skin2\dragBar.png" />
+    <Content Include="pages\drawings\assets\skins\skin2\left.png" />
+    <Content Include="pages\drawings\assets\skins\skin2\leftOver.png" />
+    <Content Include="pages\drawings\assets\skins\skin3\back.png" />
+    <Content Include="pages\drawings\assets\skins\skin3\dragBar.png" />
+    <Content Include="pages\drawings\assets\skins\skin3\left.png" />
+    <Content Include="pages\drawings\assets\skins\skin3\leftOver.png" />
+    <Content Include="pages\drawings\assets\skins\skin4\back.png" />
+    <Content Include="pages\drawings\assets\skins\skin4\dragBar.png" />
+    <Content Include="pages\drawings\assets\skins\skin4\up.png" />
+    <Content Include="pages\drawings\assets\skins\skin4\upOver.png" />
+    <Content Include="pages\drawings\assets\skins\skin\back.png" />
+    <Content Include="pages\drawings\assets\skins\skin\dragBar.png" />
+    <Content Include="pages\drawings\assets\skins\skin\up.png" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1.xml" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1\back.gif" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1\bar.gif" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1\barScrubber.gif" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1\centerPlay.png" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1\pause.jpg" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1\pauseDown.jpg" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1\pauseOver.jpg" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1\play.jpg" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1\playDown.jpg" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1\playOver.jpg" />
+    <Content Include="pages\drawings\assets\skins\videoSkin1\pointer.gif" />
+    <Content Include="pages\drawings\colorbox\assets\colorbox.css" />
+    <Content Include="pages\drawings\colorbox\assets\images\bg.png" />
+    <Content Include="pages\drawings\colorbox\assets\images\border.png" />
+    <Content Include="pages\drawings\colorbox\assets\images\controls.png" />
+    <Content Include="pages\drawings\colorbox\assets\images\loading.gif" />
+    <Content Include="pages\drawings\colorbox\assets\images\slideshow_off.gif" />
+    <Content Include="pages\drawings\colorbox\assets\images\slideshow_on.gif" />
+    <Content Include="pages\drawings\colorbox\assets\images\title.png" />
+    <Content Include="pages\drawings\colorbox\jquery-1.7.2.min.js" />
+    <Content Include="pages\drawings\colorbox\jquery.colorbox-min.js" />
+    <Content Include="pages\drawings\colorbox\swf.js.communication.js" />
+    <Content Include="pages\drawings\drawings.html" />
+    <Content Include="pages\drawings\images.xml" />
+    <Content Include="pages\drawings\images\drawing1.jpg" />
+    <Content Include="pages\drawings\images\hat.jpg" />
+    <Content Include="pages\drawings\images\img006.gif" />
+    <Content Include="pages\drawings\images\lion.png" />
+    <Content Include="pages\drawings\images\pigs.png" />
+    <Content Include="pages\drawings\images\posideon.png" />
+    <Content Include="pages\drawings\images\u0.jpg" />
+    <Content Include="pages\drawings\images\u1.jpg" />
+    <Content Include="pages\drawings\PhotoWallFX.swf" />
+    <Content Include="pages\drawings\readme.txt" />
+    <Content Include="pages\drawings\settings.xml" />
+    <Content Include="pages\drawings\swfobject.js" />
+    <Content Include="pages\graphicDesign\assets\background.jpg" />
+    <Content Include="pages\graphicDesign\assets\css\style.css" />
+    <Content Include="pages\graphicDesign\assets\css\style2.css" />
+    <Content Include="pages\graphicDesign\assets\css\style3.css" />
+    <Content Include="pages\graphicDesign\assets\skins\close.png" />
+    <Content Include="pages\graphicDesign\assets\skins\close2.png" />
+    <Content Include="pages\graphicDesign\assets\skins\close3.png" />
+    <Content Include="pages\graphicDesign\assets\skins\close4.png" />
+    <Content Include="pages\graphicDesign\assets\skins\close5.png" />
+    <Content Include="pages\graphicDesign\assets\skins\close6.png" />
+    <Content Include="pages\graphicDesign\assets\skins\scrollSkin.xml" />
+    <Content Include="pages\graphicDesign\assets\skins\scrollSkin2.xml" />
+    <Content Include="pages\graphicDesign\assets\skins\scrollSkin3.xml" />
+    <Content Include="pages\graphicDesign\assets\skins\scrollSkin4.xml" />
+    <Content Include="pages\graphicDesign\assets\skins\skin2\back.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin2\dragBar.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin2\left.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin2\leftOver.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin3\back.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin3\dragBar.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin3\left.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin3\leftOver.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin4\back.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin4\dragBar.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin4\up.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin4\upOver.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin\back.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin\dragBar.png" />
+    <Content Include="pages\graphicDesign\assets\skins\skin\up.png" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1.xml" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1\back.gif" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1\bar.gif" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1\barScrubber.gif" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1\centerPlay.png" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1\pause.jpg" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1\pauseDown.jpg" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1\pauseOver.jpg" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1\play.jpg" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1\playDown.jpg" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1\playOver.jpg" />
+    <Content Include="pages\graphicDesign\assets\skins\videoSkin1\pointer.gif" />
+    <Content Include="pages\graphicDesign\colorbox\assets\colorbox.css" />
+    <Content Include="pages\graphicDesign\colorbox\assets\images\bg.png" />
+    <Content Include="pages\graphicDesign\colorbox\assets\images\border.png" />
+    <Content Include="pages\graphicDesign\colorbox\assets\images\controls.png" />
+    <Content Include="pages\graphicDesign\colorbox\assets\images\loading.gif" />
+    <Content Include="pages\graphicDesign\colorbox\assets\images\slideshow_off.gif" />
+    <Content Include="pages\graphicDesign\colorbox\assets\images\slideshow_on.gif" />
+    <Content Include="pages\graphicDesign\colorbox\assets\images\title.png" />
+    <Content Include="pages\graphicDesign\colorbox\jquery-1.7.2.min.js" />
+    <Content Include="pages\graphicDesign\colorbox\jquery.colorbox-min.js" />
+    <Content Include="pages\graphicDesign\colorbox\swf.js.communication.js" />
+    <Content Include="pages\graphicDesign\graphicDesign.html" />
+    <Content Include="pages\graphicDesign\images.xml" />
+    <Content Include="pages\graphicDesign\images\birdBrown.jpg" />
+    <Content Include="pages\graphicDesign\images\coladaSticker.png" />
+    <Content Include="pages\graphicDesign\images\cupcake.jpg" />
+    <Content Include="pages\graphicDesign\images\disease.jpg" />
+    <Content Include="pages\graphicDesign\images\ginSticker.png" />
+    <Content Include="pages\graphicDesign\images\healthDiagram.jpg" />
+    <Content Include="pages\graphicDesign\images\heroPoster.png" />
+    <Content Include="pages\graphicDesign\images\humanTraf.png" />
+    <Content Include="pages\graphicDesign\images\Insert.jpg" />
+    <Content Include="pages\graphicDesign\images\nebula.png" />
+    <Content Include="pages\graphicDesign\images\newsletterPage1.png" />
+    <Content Include="pages\graphicDesign\images\newsletterPage2.png" />
+    <Content Include="pages\graphicDesign\images\newsletterPage3.png" />
+    <Content Include="pages\graphicDesign\images\outerspace.png" />
+    <Content Include="pages\graphicDesign\images\storyboard.jpg" />
+    <Content Include="pages\graphicDesign\images\u0.png" />
+    <Content Include="pages\graphicDesign\images\u1.png" />
+    <Content Include="pages\graphicDesign\images\u2.png" />
+    <Content Include="pages\graphicDesign\PhotoWallFX.swf" />
+    <Content Include="pages\graphicDesign\readme.txt" />
+    <Content Include="pages\graphicDesign\settings.xml" />
+    <Content Include="pages\graphicDesign\swfobject.js" />
+    <Content Include="pages\home\home.html" />
+    <Content Include="pages\misc\images\catAndMouse.jpg" />
+    <Content Include="pages\misc\images\DSC_0025.JPG" />
+    <Content Include="pages\misc\images\laserCutBoxes.jpg" />
+    <Content Include="pages\misc\images\Product Design.jpg" />
+    <Content Include="pages\scaleModels\assets\background.jpg" />
+    <Content Include="pages\scaleModels\assets\css\style.css" />
+    <Content Include="pages\scaleModels\assets\css\style2.css" />
+    <Content Include="pages\scaleModels\assets\css\style3.css" />
+    <Content Include="pages\scaleModels\assets\skins\close.png" />
+    <Content Include="pages\scaleModels\assets\skins\close2.png" />
+    <Content Include="pages\scaleModels\assets\skins\close3.png" />
+    <Content Include="pages\scaleModels\assets\skins\close4.png" />
+    <Content Include="pages\scaleModels\assets\skins\close5.png" />
+    <Content Include="pages\scaleModels\assets\skins\close6.png" />
+    <Content Include="pages\scaleModels\assets\skins\scrollSkin.xml" />
+    <Content Include="pages\scaleModels\assets\skins\scrollSkin2.xml" />
+    <Content Include="pages\scaleModels\assets\skins\scrollSkin3.xml" />
+    <Content Include="pages\scaleModels\assets\skins\scrollSkin4.xml" />
+    <Content Include="pages\scaleModels\assets\skins\skin2\back.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin2\dragBar.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin2\left.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin2\leftOver.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin3\back.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin3\dragBar.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin3\left.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin3\leftOver.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin4\back.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin4\dragBar.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin4\up.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin4\upOver.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin\back.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin\dragBar.png" />
+    <Content Include="pages\scaleModels\assets\skins\skin\up.png" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1.xml" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1\back.gif" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1\bar.gif" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1\barScrubber.gif" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1\centerPlay.png" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1\pause.jpg" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1\pauseDown.jpg" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1\pauseOver.jpg" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1\play.jpg" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1\playDown.jpg" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1\playOver.jpg" />
+    <Content Include="pages\scaleModels\assets\skins\videoSkin1\pointer.gif" />
+    <Content Include="pages\scaleModels\colorbox\assets\colorbox.css" />
+    <Content Include="pages\scaleModels\colorbox\assets\images\bg.png" />
+    <Content Include="pages\scaleModels\colorbox\assets\images\border.png" />
+    <Content Include="pages\scaleModels\colorbox\assets\images\controls.png" />
+    <Content Include="pages\scaleModels\colorbox\assets\images\loading.gif" />
+    <Content Include="pages\scaleModels\colorbox\assets\images\slideshow_off.gif" />
+    <Content Include="pages\scaleModels\colorbox\assets\images\slideshow_on.gif" />
+    <Content Include="pages\scaleModels\colorbox\assets\images\title.png" />
+    <Content Include="pages\scaleModels\colorbox\jquery-1.7.2.min.js" />
+    <Content Include="pages\scaleModels\colorbox\jquery.colorbox-min.js" />
+    <Content Include="pages\scaleModels\colorbox\swf.js.communication.js" />
+    <Content Include="pages\scaleModels\images.xml" />
+    <Content Include="pages\scaleModels\images\Adobe.jpg" />
+    <Content Include="pages\scaleModels\images\Castle.jpg" />
+    <Content Include="pages\scaleModels\images\Computer.jpg" />
+    <Content Include="pages\scaleModels\images\DinoPark.jpg" />
+    <Content Include="pages\scaleModels\images\dSCN1703.JPG" />
+    <Content Include="pages\scaleModels\images\dSCN1780.JPG" />
+    <Content Include="pages\scaleModels\images\Hell.jpg" />
+    <Content Include="pages\scaleModels\images\IMG_3571.JPG" />
+    <Content Include="pages\scaleModels\images\Minecraft.jpg" />
+    <Content Include="pages\scaleModels\images\RoomFunctionalDoor.jpg" />
+    <Content Include="pages\scaleModels\images\RoomMolding.jpg" />
+    <Content Include="pages\scaleModels\images\ski.jpg" />
+    <Content Include="pages\scaleModels\images\Space.jpg" />
+    <Content Include="pages\scaleModels\images\u0.jpg" />
+    <Content Include="pages\scaleModels\images\u1.jpg" />
+    <Content Include="pages\scaleModels\PhotoWallFX.swf" />
+    <Content Include="pages\scaleModels\readme.txt" />
+    <Content Include="pages\scaleModels\scaleModels.html" />
+    <Content Include="pages\scaleModels\settings.xml" />
+    <Content Include="pages\scaleModels\swfobject.js" />
+    <Content Include="pages\video\assets\background.jpg" />
+    <Content Include="pages\video\assets\css\style.css" />
+    <Content Include="pages\video\assets\css\style2.css" />
+    <Content Include="pages\video\assets\css\style3.css" />
+    <Content Include="pages\video\assets\skins\close.png" />
+    <Content Include="pages\video\assets\skins\close2.png" />
+    <Content Include="pages\video\assets\skins\close3.png" />
+    <Content Include="pages\video\assets\skins\close4.png" />
+    <Content Include="pages\video\assets\skins\close5.png" />
+    <Content Include="pages\video\assets\skins\close6.png" />
+    <Content Include="pages\video\assets\skins\scrollSkin.xml" />
+    <Content Include="pages\video\assets\skins\scrollSkin2.xml" />
+    <Content Include="pages\video\assets\skins\scrollSkin3.xml" />
+    <Content Include="pages\video\assets\skins\scrollSkin4.xml" />
+    <Content Include="pages\video\assets\skins\skin2\back.png" />
+    <Content Include="pages\video\assets\skins\skin2\dragBar.png" />
+    <Content Include="pages\video\assets\skins\skin2\left.png" />
+    <Content Include="pages\video\assets\skins\skin2\leftOver.png" />
+    <Content Include="pages\video\assets\skins\skin3\back.png" />
+    <Content Include="pages\video\assets\skins\skin3\dragBar.png" />
+    <Content Include="pages\video\assets\skins\skin3\left.png" />
+    <Content Include="pages\video\assets\skins\skin3\leftOver.png" />
+    <Content Include="pages\video\assets\skins\skin4\back.png" />
+    <Content Include="pages\video\assets\skins\skin4\dragBar.png" />
+    <Content Include="pages\video\assets\skins\skin4\up.png" />
+    <Content Include="pages\video\assets\skins\skin4\upOver.png" />
+    <Content Include="pages\video\assets\skins\skin\back.png" />
+    <Content Include="pages\video\assets\skins\skin\dragBar.png" />
+    <Content Include="pages\video\assets\skins\skin\up.png" />
+    <Content Include="pages\video\assets\skins\videoSkin1.xml" />
+    <Content Include="pages\video\assets\skins\videoSkin1\back.gif" />
+    <Content Include="pages\video\assets\skins\videoSkin1\bar.gif" />
+    <Content Include="pages\video\assets\skins\videoSkin1\barScrubber.gif" />
+    <Content Include="pages\video\assets\skins\videoSkin1\centerPlay.png" />
+    <Content Include="pages\video\assets\skins\videoSkin1\pause.jpg" />
+    <Content Include="pages\video\assets\skins\videoSkin1\pauseDown.jpg" />
+    <Content Include="pages\video\assets\skins\videoSkin1\pauseOver.jpg" />
+    <Content Include="pages\video\assets\skins\videoSkin1\play.jpg" />
+    <Content Include="pages\video\assets\skins\videoSkin1\playDown.jpg" />
+    <Content Include="pages\video\assets\skins\videoSkin1\playOver.jpg" />
+    <Content Include="pages\video\assets\skins\videoSkin1\pointer.gif" />
+    <Content Include="pages\video\colorbox\assets\colorbox.css" />
+    <Content Include="pages\video\colorbox\assets\images\bg.png" />
+    <Content Include="pages\video\colorbox\assets\images\border.png" />
+    <Content Include="pages\video\colorbox\assets\images\controls.png" />
+    <Content Include="pages\video\colorbox\assets\images\loading.gif" />
+    <Content Include="pages\video\colorbox\assets\images\slideshow_off.gif" />
+    <Content Include="pages\video\colorbox\assets\images\slideshow_on.gif" />
+    <Content Include="pages\video\colorbox\assets\images\title.png" />
+    <Content Include="pages\video\colorbox\jquery-1.7.2.min.js" />
+    <Content Include="pages\video\colorbox\jquery.colorbox-min.js" />
+    <Content Include="pages\video\colorbox\swf.js.communication.js" />
+    <Content Include="pages\video\images.xml" />
+    <Content Include="pages\video\images\Hat.jpg" />
+    <Content Include="pages\video\images\img006.gif" />
+    <Content Include="pages\video\images\lion.png" />
+    <Content Include="pages\video\images\pigs.png" />
+    <Content Include="pages\video\images\posideon.png" />
+    <Content Include="pages\video\images\u0.jpg" />
+    <Content Include="pages\video\images\u1.jpg" />
+    <Content Include="pages\video\PhotoWallFX.swf" />
+    <Content Include="pages\video\readme.txt" />
+    <Content Include="pages\video\settings.xml" />
+    <Content Include="pages\video\swfobject.js" />
+    <Content Include="pages\video\video.css" />
+    <Content Include="pages\video\video.html" />
+    <Content Include="pages\video\video\fantasy.jpg" />
+    <Content Include="pages\video\video\fantasy2.jpg" />
+    <Content Include="pages\web\assets\background.jpg" />
+    <Content Include="pages\web\assets\css\style.css" />
+    <Content Include="pages\web\assets\css\style2.css" />
+    <Content Include="pages\web\assets\css\style3.css" />
+    <Content Include="pages\web\assets\skins\close.png" />
+    <Content Include="pages\web\assets\skins\close2.png" />
+    <Content Include="pages\web\assets\skins\close3.png" />
+    <Content Include="pages\web\assets\skins\close4.png" />
+    <Content Include="pages\web\assets\skins\close5.png" />
+    <Content Include="pages\web\assets\skins\close6.png" />
+    <Content Include="pages\web\assets\skins\scrollSkin.xml" />
+    <Content Include="pages\web\assets\skins\scrollSkin2.xml" />
+    <Content Include="pages\web\assets\skins\scrollSkin3.xml" />
+    <Content Include="pages\web\assets\skins\scrollSkin4.xml" />
+    <Content Include="pages\web\assets\skins\skin2\back.png" />
+    <Content Include="pages\web\assets\skins\skin2\dragBar.png" />
+    <Content Include="pages\web\assets\skins\skin2\left.png" />
+    <Content Include="pages\web\assets\skins\skin2\leftOver.png" />
+    <Content Include="pages\web\assets\skins\skin3\back.png" />
+    <Content Include="pages\web\assets\skins\skin3\dragBar.png" />
+    <Content Include="pages\web\assets\skins\skin3\left.png" />
+    <Content Include="pages\web\assets\skins\skin3\leftOver.png" />
+    <Content Include="pages\web\assets\skins\skin4\back.png" />
+    <Content Include="pages\web\assets\skins\skin4\dragBar.png" />
+    <Content Include="pages\web\assets\skins\skin4\up.png" />
+    <Content Include="pages\web\assets\skins\skin4\upOver.png" />
+    <Content Include="pages\web\assets\skins\skin\back.png" />
+    <Content Include="pages\web\assets\skins\skin\dragBar.png" />
+    <Content Include="pages\web\assets\skins\skin\up.png" />
+    <Content Include="pages\web\assets\skins\videoSkin1.xml" />
+    <Content Include="pages\web\assets\skins\videoSkin1\back.gif" />
+    <Content Include="pages\web\assets\skins\videoSkin1\bar.gif" />
+    <Content Include="pages\web\assets\skins\videoSkin1\barScrubber.gif" />
+    <Content Include="pages\web\assets\skins\videoSkin1\centerPlay.png" />
+    <Content Include="pages\web\assets\skins\videoSkin1\pause.jpg" />
+    <Content Include="pages\web\assets\skins\videoSkin1\pauseDown.jpg" />
+    <Content Include="pages\web\assets\skins\videoSkin1\pauseOver.jpg" />
+    <Content Include="pages\web\assets\skins\videoSkin1\play.jpg" />
+    <Content Include="pages\web\assets\skins\videoSkin1\playDown.jpg" />
+    <Content Include="pages\web\assets\skins\videoSkin1\playOver.jpg" />
+    <Content Include="pages\web\assets\skins\videoSkin1\pointer.gif" />
+    <Content Include="pages\web\colorbox\assets\colorbox.css" />
+    <Content Include="pages\web\colorbox\assets\images\bg.png" />
+    <Content Include="pages\web\colorbox\assets\images\border.png" />
+    <Content Include="pages\web\colorbox\assets\images\controls.png" />
+    <Content Include="pages\web\colorbox\assets\images\loading.gif" />
+    <Content Include="pages\web\colorbox\assets\images\slideshow_off.gif" />
+    <Content Include="pages\web\colorbox\assets\images\slideshow_on.gif" />
+    <Content Include="pages\web\colorbox\assets\images\title.png" />
+    <Content Include="pages\web\colorbox\jquery-1.7.2.min.js" />
+    <Content Include="pages\web\colorbox\jquery.colorbox-min.js" />
+    <Content Include="pages\web\colorbox\swf.js.communication.js" />
+    <Content Include="pages\web\images.xml" />
+    <Content Include="pages\web\images\u0.png" />
+    <Content Include="pages\web\images\u1.png" />
+    <Content Include="pages\web\images\u2.jpg" />
+    <Content Include="pages\web\images\u3.png" />
+    <Content Include="pages\web\images\u4.jpg" />
+    <Content Include="pages\web\images\u5.jpg" />
+    <Content Include="pages\web\PhotoWallFX.swf" />
+    <Content Include="pages\web\readme.txt" />
+    <Content Include="pages\web\settings.xml" />
+    <Content Include="pages\web\swfobject.js" />
+    <Content Include="pages\web\web.html" />
+    <Content Include="style.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="layout1.psd" />
+    <Content Include="pages\animation\PhotoWallFX.fla" />
+    <Content Include="pages\animation\PhotoWallFX.mxp" />
+    <Content Include="pages\drawings\PhotoWallFX.fla" />
+    <Content Include="pages\drawings\PhotoWallFX.mxp" />
+    <Content Include="pages\graphicDesign\PhotoWallFX.fla" />
+    <Content Include="pages\graphicDesign\PhotoWallFX.mxp" />
+    <Content Include="pages\scaleModels\PhotoWallFX.fla" />
+    <Content Include="pages\scaleModels\PhotoWallFX.mxp" />
+    <Content Include="pages\video\PhotoWallFX.fla" />
+    <Content Include="pages\video\PhotoWallFX.mxp" />
+    <Content Include="pages\video\video\fantasy.flv" />
+    <Content Include="pages\video\video\fantasy2.flv" />
+    <Content Include="pages\web\PhotoWallFX.fla" />
+    <Content Include="pages\web\PhotoWallFX.mxp" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49689/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

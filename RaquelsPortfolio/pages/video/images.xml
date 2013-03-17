@@ -1,0 +1,11 @@
+<photos>
+	<photo image="images/lion.png" colorboxImage="images/lion.png" colorboxInfo="" colorboxClass="image" url="http://web link" target="_blank"><![CDATA[<head>the lion and the mouse</head><body>illustrator and mouse</body>]]></photo>
+	<photo image="images/pigs.png" colorboxImage="images/pigs.png" colorboxInfo="" colorboxClass="image" url="http://web link" target="_blank"><![CDATA[<head>the three little pigs</head><body>illustrator and mouse</body>]]></photo>
+	<photo image="images/posideon.png" colorboxImage="images/posideon.png" colorboxInfo="" colorboxClass="image" url="http://web link" target="_blank"><![CDATA[<head>posideon</head><body>illustrator and mouse</body>]]></photo>
+	<photo image="images/hat.jpg" colorboxImage="images/hat.jpg" colorboxInfo="" colorboxClass="image" url="http://web link" target="_blank"><![CDATA[<head>still life</head><body>pastels</body>]]></photo>
+	<photo image="images/u0.jpg" colorboxImage="images/u0.jpg" colorboxInfo="" colorboxClass="image" url="http://web link" target="_blank"><![CDATA[<head>lion</head><body>pastels</body>]]></photo>
+	<photo image="images/u1.jpg" colorboxImage="images/u1.jpg" colorboxInfo="" colorboxClass="image" url="http://web link" target="_blank"><![CDATA[<head>portrait</head><body>graphite</body>]]></photo>
+	<photo image="images/img006.gif" colorboxImage="images/img006.gif" colorboxInfo="" colorboxClass="image" url="http://web link" target="_blank"><![CDATA[<head>boar sketch</head><body>graphite</body>]]></photo>
+	<video media="video/fantasy.flv" colorboxImage="video/fantasy.jpg" colorboxInfo="" colorboxClass="image" image="video/fantasy.jpg" skin="assets/skins/videoSkin1.xml" backColor="0x222222" backAlpha="1" autoplay="true" url="http://web link" target="_blank"></video>
+	<!-- <video media="http://www.youtube.com/embed/zb8pGpLsQfQ" colorboxImage="images/posideon.jpg" colorboxInfo="Item 02" colorboxClass="image" image="video/posideon.jpg" skin="assets/skins/videoSkin1.xml" backColor="0xff0000" backAlpha="1" autoplay="true"></video> -->
+	</photos>

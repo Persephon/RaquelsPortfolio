@@ -1,0 +1,86 @@
+<settings>
+  <General_Properties>
+    <assets value="images.xml"/>
+    <componentWidth value="530"/>
+    <componentHeight value="630"/>
+    <display value="vertical"/>
+    <displayValue value="150"/>
+    <spacing value="5"/>
+    <topLeftSpacing value="12"/>
+    <useColorbox value="false"/>
+    <showAbout value="true"/>
+  </General_Properties>
+  <Colorbox_Properties>
+    <transition value="elastic"/>
+    <innerWidth value="900"/>
+    <innerHeight value="500"/>
+    <slideshow value="false"/>
+    <slideshowSpeed value="2500"/>
+  </Colorbox_Properties>
+  <Image_Properties>
+    <click value="expand"/>
+    <closeButton value="assets/skins/close.png"/>
+    <expandHoverPercent value="5"/>
+    <expandHoverTime value="0.5"/>
+    <expandTime value="0.3"/>
+    <effectType value="max"/>
+    <effectOut value="0"/>
+    <effectOver value="5"/>
+    <effectRatio value="4"/>
+    <useBorder value="false"/>
+    <borderColor value="0xffffff"/>
+    <borderSize value="10"/>
+    <borderAlpha value="0.5"/>
+    <cornerRadius value="0"/>
+    <useGlow value="true"/>
+    <glowColor value="0xffffff"/>
+  </Image_Properties>
+  <Scroll_Properties>
+    <skin value="assets/skins/scrollSkin4.xml"/>
+    <mouseWheel value="true"/>
+    <autoScroll value="true"/>
+    <scrollAmount value="40"/>
+    <moveRatio value="10"/>
+  </Scroll_Properties>
+  <Textbox_Properties>
+    <style value="assets/css/style3.css"/>
+    <position value="bottom"/>
+    <backColor1 value="0x843baa"/>
+    <backColor2 value="0x843baa"/>
+    <backAlpha value="0.8"/>
+    <backRatio value="255"/>
+    <backAngle value="1.55"/>
+    <borderColor value="0xffffff"/>
+    <borderSize value="1"/>
+    <borderAlpha value="0.5"/>
+    <padding value="10"/>
+    <embedFonts value="false"/>
+  </Textbox_Properties>
+  <Background_Properties>
+    <fillType value="radial"/>
+    <backgroundImage value=""/>
+    <backgroundFitting value="bestfit"/>
+    <backgroundColor1 value="0x444444"/>
+    <backgroundColor2 value="0x000000"/>
+    <backgroundAlpha value="0"/>
+    <bgCornerRadius value="7"/>
+    <gradientRotation value="27"/>
+    <gradientRatio value="28"/>
+    <gradientPosX value="-396"/>
+    <gradientPosY value="-207"/>
+    <useShade value="false"/>
+    <shadeColor value=""/>
+    <shadeAlpha value="0"/>
+    <shadeRatio value="0"/>
+    <shadeWidth value="0"/>
+    <shadeHeight value="0"/>
+  </Background_Properties>
+  <Shade_Properties>
+    <useShade value="false"/>
+    <shadeColor value="0x000000"/>
+    <shadeAlpha value="1"/>
+    <shadeRatio value="40"/>
+    <shadeWidth value="0"/>
+    <shadeHeight value="0"/>
+  </Shade_Properties>
+</settings>

@@ -1,0 +1,129 @@
+body {
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.4em;
+	color: white;
+	margin: 20px;
+	padding: 0x;
+	background: url("images/website/strange_bullseyes.png") repeat;
+}
+
+#container{
+ 	width: 100%;
+ 	min-width: 200px;
+ 	max-width: 800px;
+ 	margin: 0 auto;
+	color: #e5dfc4;
+	background-image: url("images/website/mainBg.png");
+	background-size: 100% 100%;
+	/*background-color: #f9f8f1;*/
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 2px 1px 6px 4px rgba(10,10,0,.5);
+	position: relative;
+}
+
+.mainContent p{
+	float: left;
+	width: 200px;
+	color: white;
+	border: 2px dashed white;
+	margin: 96px 21px 0 0;
+	padding: 12px 42px 12px 23px;
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+.picture{
+	float: right;
+	margin: 96px 0 0 0;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar{
+ 	position: relative;
+	display: inline-block;
+	background-image: url("images/website/navBg.png");
+	background-repeat: repeat-x;
+	padding: 0 20px 0 40px;
+	text-align: right;
+	height: 675px;
+}
+
+.garnishImg{
+	position: absolute;
+	z-index: 10;
+	width: 100px;
+	bottom: 6px;
+	left: 10px;
+}
+
+.titleImg {
+	position: absolute;
+	z-index: 10;
+	width: 261px;
+	top: 19px;
+	left: 32px;
+}
+
+ul#nav{ 
+	list-style: none; 
+	margin-top: 160px;
+	font-size: 20px;
+}
+
+ul#nav li{ 
+	margin-bottom: 7px;
+}
+
+ul#nav li a.button{
+	font-weight: bold;
+	color: #f9f8f1;
+	text-decoration: none;
+}
+
+ul#nav li a.button:hover{
+	color: purple;
+}
+
+ul#nav li a.active {
+	color: purple;
+}
+
+.mainContent{
+	float: right;
+	margin: 20px 20px 0 0;
+	width: 508px;
+	height: 651px;
+}
+
+.clearfix{
+	clear: both;
+}
+
+#footer img{
+	width: 40px;
+	height: 40px;
+}
+
+#footer p{
+	background-color: #C8B4D2;
+	color: black;
+	font-style: italic;
+	text-align: center;
+}
+
+#footer {
+	background-color: #C8B4D2;
+	width: 800px;
+	margin: auto;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 2px 1px 6px 4px rgba(10,10,0,.5);
+}
