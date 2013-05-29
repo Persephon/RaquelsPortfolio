@@ -127,3 +127,8 @@ ul#nav li a.active {
 	-webkit-border-radius: 3px;
 	box-shadow: 2px 1px 6px 4px rgba(10,10,0,.5);
 }
+
+ul.interactiveLinksList {
+	margin-top: 140px;
+	list-style: none;
+}
