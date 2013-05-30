@@ -324,11 +324,15 @@
     <Content Include="pages\graphicDesign\images\coladaSticker.png" />
     <Content Include="pages\graphicDesign\images\cupcake.jpg" />
     <Content Include="pages\graphicDesign\images\disease.jpg" />
+    <Content Include="pages\graphicDesign\images\earthDay.png" />
+    <Content Include="pages\graphicDesign\images\font.png" />
     <Content Include="pages\graphicDesign\images\ginSticker.png" />
     <Content Include="pages\graphicDesign\images\healthDiagram.jpg" />
     <Content Include="pages\graphicDesign\images\heroPoster.png" />
     <Content Include="pages\graphicDesign\images\humanTraf.png" />
     <Content Include="pages\graphicDesign\images\Insert.jpg" />
+    <Content Include="pages\graphicDesign\images\minotaur.png" />
+    <Content Include="pages\graphicDesign\images\moralanimal.png" />
     <Content Include="pages\graphicDesign\images\nebula.png" />
     <Content Include="pages\graphicDesign\images\newsletterPage1.png" />
     <Content Include="pages\graphicDesign\images\newsletterPage2.png" />
